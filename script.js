@@ -18,11 +18,10 @@ async function callByCityName(location) {
     try {
         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&&units=metric&lang=fr&appid=${API_KEY}`, {mode: 'cors'});
         const data = await response.json();
-        console.log(data);
+        errorMsg.style.display = "";
         displayWeatherData(data);
-
     } catch(err) {
-        console.log(err);
+          errorMsg.style.display = "block";
     }
 }
 
