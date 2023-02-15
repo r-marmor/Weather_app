@@ -6,7 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: minmax(100vh, auto);
     width: 100vw;
     margin: 0;
     background-image: url('images/meteo.jpg');
@@ -75,7 +75,7 @@ form {
 }
 
 .clock {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     color: white;
     font-size: 3rem;
     font-weight: 600;
